@@ -15,10 +15,8 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((names) => Promise.all(names.map((n) => caches.delete(n))))
   );
   self.clients.claim();
-  // Tell all clients to reload so they get fresh content
-  self.clients.matchAll().then((clients) => {
-    clients.forEach((client) => client.postMessage({ type: 'FORCE_RELOAD' }));
-  });
+  // Note: force-reload on activate removed — it raced with license activation
+  // and wiped sessionStorage writes. Clients refresh naturally on demand.
 });
 
 self.addEventListener('message', (event) => {
