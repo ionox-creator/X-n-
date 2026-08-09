@@ -1,4 +1,4 @@
-CAPITAL PRECISION ENGINE (CPE)
+CAPITAL PRECISION ENGINE 
 TERMS OF SERVICE & CONDITIONS
 ========================================
 By: Ionox Technologies
@@ -10,7 +10,7 @@ Document Reference: IONOX-TOS-2026-v1.4
 ────────────────────────────────────────
 This Terms of Service Agreement ("Agreement") is entered into by and between{" "}
 Ionox Technologies ("Company," "we," "us," or "our"), the developer and operator of the
-Capital Precision Engine ("CPE," "Software," "Platform," or "Application"), and the individual or entity
+Fintel ("Fintel," "Software," "Platform," or "Application"), and the individual or entity
 accessing or using the Software ("User," "you," or "your").
 BY CLICKING "I AGREE TO THE TERMS & CONDITIONS" OR BY ACCESSING OR USING THE SOFTWARE, YOU
 ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS SET FORTH IN
@@ -27,7 +27,7 @@ Document Reference: IONOX-TOS-2026-v1.4
 ────────────────────────────────────────
 2.1 License Grant. Subject to your compliance with all terms of this Agreement, Ionox
 Technologies grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to
-access and use the CPE Software for your personal or internal business purposes during the term of your
+access and use the Fintel Software for your personal or internal business purposes during the term of your
 subscription or license key activation period.
 2.2 Permitted Use. The Software is designed to provide AI-powered venture finance analysis,
 including but not limited to: cap table modeling, dilution analysis, SAFE note calculations, term sheet
@@ -47,7 +47,7 @@ right to revoke any license key that is found to be in violation of this Agreeme
 3. Zero-Data Privacy Policy
 ────────────────────────────────────────
 Zero-Data Architecture — Core Principle
-CPE is built on a zero-data collection architecture. This is not a feature — it is a fundamental design
+Fintel is built on a zero-data collection architecture. This is not a feature — it is a fundamental design
 philosophy. No data leaves your device. Ever.
 3.1 No Data Collection. Ionox Technologies does not collect, store, process, transmit, or
 have access to any personal data, financial data, cap table data, term sheet data, chat history, audit
@@ -80,7 +80,7 @@ all applicable data protection regulations because no personal data is collected
 to: source code, object code, design, UI/UX, graphics, icons, logos, trademarks, trade names, service
 marks, algorithms, models, documentation, and all other proprietary materials (collectively, "IP")
 are and shall remain the sole and exclusive property of Ionox Technologies.
-4.2 CPE Branding. "Capital Precision Engine," "CPE," the CPE logo, and
+4.2 Fintel Branding. "Fintel," "Fintel," the Fintel logo, and
 all associated trade dress and branding elements are trademarks of Ionox Technologies. No license or right
 is granted to you to use any trademark or trade name of Ionox Technologies without our prior written
 consent.
@@ -98,8 +98,8 @@ documents.
 5. Disclaimer — Not Financial Advice
 ────────────────────────────────────────
 Critical Disclaimer
-CPE is an analytical tool, NOT a substitute for professional financial, legal, or tax advice.
-5.1 Not a Financial Advisor. The Capital Precision Engine is a software tool designed to
+Fintel is an analytical tool, NOT a substitute for professional financial, legal, or tax advice.
+5.1 Not a Financial Advisor. The Fintel is a software tool designed to
 assist with venture finance calculations, modeling, and analysis. It does NOT constitute, and should not be
 relied upon as, financial advice, investment advice, legal advice, tax advice, or any other form of
 professional advice.
@@ -109,7 +109,7 @@ mathematical computations and AI-generated analysis based on the inputs you prov
 outputs depends entirely on the accuracy of your inputs.
 5.3 Consult Professionals. You should always consult with qualified financial advisors,
 legal counsel, tax professionals, and other appropriate experts before making any investment, fundraising,
-or business decisions. The use of CPE does not replace the need for professional judgment.
+or business decisions. The use of Fintel does not replace the need for professional judgment.
 5.4 SEC Compliance Notice. While the Software incorporates SEC Regulation D (Rule 506b/506c)
 frameworks and SAFE note modeling based on Y Combinator&apos;s Post-Money SAFE (2018) templates, these are
 provided for informational and educational purposes only. The Software does not guarantee SEC compliance and
@@ -127,7 +127,7 @@ consequences arising from your use of or reliance on the Software&apos;s outputs
 OTHERWISE. IONOX TECHNOLOGIES EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO:
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, AND ANY
 WARRANTIES ARISING FROM COURSE OF DEALING, COURSE OF PERFORMANCE, OR USAGE IN TRADE.
-6.2 No Guarantee of Accuracy. While CPE is designed to perform precise calculations, Ionox
+6.2 No Guarantee of Accuracy. While Fintel is designed to perform precise calculations, Ionox
 Technologies does not warrant that the Software will be error-free, uninterrupted, or that all calculations
 will be 100% accurate. Financial models involve assumptions and estimates that may not reflect actual
 outcomes. Users are responsible for independently verifying all outputs.

@@ -1,13 +1,18 @@
 {
-  "name": "Capital Precision Engine",
-  "short_name": "CPE",
-  "description": "AI-Powered Capital Precision Engine v1.4 — Business Intelligence, Venture Finance & Strategic Advisory",
+  "name": "Fintel",
+  "short_name": "Fintel",
+  "description": "AI-Powered Fintel v1.4 — Business Intelligence, Venture Finance & Strategic Advisory",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#060a18",
   "theme_color": "#0a0e1e",
   "orientation": "portrait-primary",
-  "categories": ["finance", "productivity", "utilities", "business"],
+  "categories": [
+    "finance",
+    "productivity",
+    "utilities",
+    "business"
+  ],
   "icons": [
     {
       "src": "/app-icon-512.png",
