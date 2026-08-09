@@ -1,0 +1,25 @@
+{
+  "name": "Capital Precision Engine",
+  "short_name": "CPE",
+  "description": "AI-Powered Capital Precision Engine v1.4 — Business Intelligence, Venture Finance & Strategic Advisory",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a18",
+  "theme_color": "#0a0e1e",
+  "orientation": "portrait-primary",
+  "categories": ["finance", "productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
