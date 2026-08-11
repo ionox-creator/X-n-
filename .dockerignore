@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+upload
+download
+tests
+skills
+examples
+mini-services
+*.md
+.env
+.env.local
+.zscripts
+tool-results

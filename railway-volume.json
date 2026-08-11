@@ -1,0 +1,8 @@
+{
+  "volumes": [
+    {
+      "name": "fintel-data",
+      "mountPath": "/data"
+    }
+  ]
+}
