@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node server.js",
-    "build": "next build",
-    "start": "next start -p $PORT",
+    "build": "echo skip",
+    "start": "node server.js",
     "lint": "eslint ."
   },
   "dependencies": {
