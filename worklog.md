@@ -79,3 +79,34 @@
 - Export: 200 OK response: OK
 - Service worker: 0 registrations: OK
 - JavaScript errors: 0
+
+---
+Task ID: final-production-zip
+Agent: Main (Z.ai Code)
+Task: Create clean production-ready ZIP with all features
+
+Work Log:
+- Restored .next from Fintel zip after sandbox reset
+- Applied all patches via apply_all_patches_v2.py:
+  * 18 calculator engines with SAFE mixing fix
+  * Engine selector dropdown (solid black bg)
+  * Individual export (PDF + XLSX)
+  * Chat features (Copy, Copy All, Share - icon only)
+  * Production Build section removed
+  * Documentation link removed
+  * PWA reload disabled, SW registration disabled
+  * Professional calculator UI (black theme, result cards)
+- Added individual export handler to API (Black noir + White clean theme)
+- Fixed client export handler (PDF opens print dialog, XLSX downloads)
+- Compressed wallpapers from 8.3MB to 864KB (PIL, quality 80, max 1920px)
+- Removed unused large images (cosmic-bg.png, welcome-bg.png)
+- Created production-ready ZIP at download/Fintel-Production-Ready.zip (6.4MB)
+- ZIP contains: .next (patched), public (compressed wallpapers), db, .zscripts, server.js, package.json, configs
+- Added restore-from-zip.sh script for easy deployment
+- Verified: license validation, export API, terminal commands all working
+
+Stage Summary:
+- ZIP size: 6.4MB (down from 26MB)
+- 296 files, all features included
+- Production-ready: just extract and run `node server.js`
+- License key: FINTEL-X7K9-M2P4-Q8W3
