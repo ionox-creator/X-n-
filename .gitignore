@@ -8,3 +8,8 @@ __pycache__/
 download/*.zip
 upload/*.zip
 node_modules/
+.next-scaffold/
+tests/
+skills/
+examples/
+tool-results/
