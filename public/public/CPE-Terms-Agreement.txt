@@ -1,0 +1,241 @@
+CAPITAL PRECISION ENGINE 
+TERMS OF SERVICE & CONDITIONS
+========================================
+By: Ionox Technologies
+Effective Date: January 1, 2026
+Document Reference: IONOX-TOS-2026-v1.4
+
+────────────────────────────────────────
+1. Agreement to Terms
+────────────────────────────────────────
+This Terms of Service Agreement ("Agreement") is entered into by and between{" "}
+Ionox Technologies ("Company," "we," "us," or "our"), the developer and operator of the
+Fintel ("Fintel," "Software," "Platform," or "Application"), and the individual or entity
+accessing or using the Software ("User," "you," or "your").
+BY CLICKING "I AGREE TO THE TERMS & CONDITIONS" OR BY ACCESSING OR USING THE SOFTWARE, YOU
+ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS SET FORTH IN
+THIS AGREEMENT. IF YOU DO NOT AGREE WITH ANY PART OF THESE TERMS, YOU MUST NOT PROCEED AND MUST
+IMMEDIATELY CEASE ALL USE OF THE SOFTWARE.
+This Agreement constitutes a legally binding contract between you and Ionox Technologies. We reserve the
+right to update, modify, or replace any part of this Agreement at our sole discretion. Continued use of the
+Software following any changes constitutes your acceptance of those changes.
+Effective Date: January 1, 2026
+Document Reference: IONOX-TOS-2026-v1.4
+
+────────────────────────────────────────
+2. Scope of Service & License Grant
+────────────────────────────────────────
+2.1 License Grant. Subject to your compliance with all terms of this Agreement, Ionox
+Technologies grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to
+access and use the Fintel Software for your personal or internal business purposes during the term of your
+subscription or license key activation period.
+2.2 Permitted Use. The Software is designed to provide AI-powered venture finance analysis,
+including but not limited to: cap table modeling, dilution analysis, SAFE note calculations, term sheet
+evaluation, exit waterfall modeling, and AI-assisted financial Q&A. You may use these features in
+accordance with the intended purpose of the Software.
+2.3 Restrictions. You shall not: (a) reverse engineer, decompile, disassemble, or
+otherwise attempt to derive source code from the Software; (b) copy, modify, distribute, sell, lease, or
+sublicense the Software; (c) use the Software for any unlawful purpose or in any way that could damage,
+disable, or impair the Software; (d) use automated means (bots, scrapers) to access the Software; (e)
+remove, alter, or obscure any proprietary notices on the Software; (f) use the Software to compete directly
+with Ionox Technologies or build a similar product.
+2.4 Account & License Key. Access to the Software requires a valid license key. Your
+license key is personal to you and may not be shared, transferred, or resold. Ionox Technologies reserves the
+right to revoke any license key that is found to be in violation of this Agreement.
+
+────────────────────────────────────────
+3. Zero-Data Privacy Policy
+────────────────────────────────────────
+Zero-Data Architecture — Core Principle
+Fintel is built on a zero-data collection architecture. This is not a feature — it is a fundamental design
+philosophy. No data leaves your device. Ever.
+3.1 No Data Collection. Ionox Technologies does not collect, store, process, transmit, or
+have access to any personal data, financial data, cap table data, term sheet data, chat history, audit
+history, or any other data you input into the Software. All computations are performed locally on your
+device.
+3.2 No Third-Party Data Sharing. We do not share, sell, rent, or distribute any user data
+to any third party. This is because we do not possess any user data to share. There are no analytics
+trackers, no advertising SDKs, and no third-party data processors integrated into the Software.
+3.3 Local-Only Storage. Any data temporarily stored by the Software (such as chat history
+or calculation inputs) is stored exclusively in your browser&apos;s local storage (localStorage/sessionStorage)
+and exists only on your device. This data is never transmitted to any server controlled by Ionox
+Technologies or any third party.
+3.4 Auto-Delete on Exit. All session data stored in sessionStorage is automatically and
+permanently deleted when you close your browser tab or window. Data in localStorage persists across sessions
+on your device but can be manually cleared at any time through your browser settings or the
+application&apos;s built-in data management features.
+3.5 No Cookies for Tracking. The Software does not use cookies, web beacons, pixel
+trackers, fingerprinting, or any other tracking technology. The only browser storage mechanisms used are
+localStorage and sessionStorage for local application state.
+3.6 AI Processing. AI-powered features (chat, analysis) process your queries locally or
+through encrypted API calls that do not retain, log, or store your input data on any server. AI responses
+are generated in real-time and are not archived.
+3.7 Compliance. This zero-data architecture inherently complies with GDPR, CCPA, HIPAA, and
+all applicable data protection regulations because no personal data is collected or processed by us.
+
+────────────────────────────────────────
+4. Intellectual Property Rights
+────────────────────────────────────────
+4.1 Ownership. All intellectual property rights in the Software, including but not limited
+to: source code, object code, design, UI/UX, graphics, icons, logos, trademarks, trade names, service
+marks, algorithms, models, documentation, and all other proprietary materials (collectively, "IP")
+are and shall remain the sole and exclusive property of Ionox Technologies.
+4.2 Fintel Branding. "Fintel," "Fintel," the Fintel logo, and
+all associated trade dress and branding elements are trademarks of Ionox Technologies. No license or right
+is granted to you to use any trademark or trade name of Ionox Technologies without our prior written
+consent.
+4.3 User Inputs. You retain all rights to the data, documents, and financial information
+you input into the Software. However, by using the Software, you grant Ionox Technologies a non-exclusive,
+royalty-free, worldwide license to use, analyze, and improve the Software based on aggregate, anonymized
+usage patterns — provided no personally identifiable data or specific financial data is ever collected or
+retained.
+4.4 Generated Reports. Reports, analyses, and outputs generated by the Software based on
+your inputs are provided for your informational and internal use only. You may not redistribute, publish,
+or commercially exploit generated reports as if they were independently produced financial advice
+documents.
+
+────────────────────────────────────────
+5. Disclaimer — Not Financial Advice
+────────────────────────────────────────
+Critical Disclaimer
+Fintel is an analytical tool, NOT a substitute for professional financial, legal, or tax advice.
+5.1 Not a Financial Advisor. The Fintel is a software tool designed to
+assist with venture finance calculations, modeling, and analysis. It does NOT constitute, and should not be
+relied upon as, financial advice, investment advice, legal advice, tax advice, or any other form of
+professional advice.
+5.2 No Fiduciary Duty. Ionox Technologies is not a registered investment advisor, broker,
+dealer, or fiduciary. We do not have a duty to act in your best financial interest. The Software provides
+mathematical computations and AI-generated analysis based on the inputs you provide, and the accuracy of
+outputs depends entirely on the accuracy of your inputs.
+5.3 Consult Professionals. You should always consult with qualified financial advisors,
+legal counsel, tax professionals, and other appropriate experts before making any investment, fundraising,
+or business decisions. The use of Fintel does not replace the need for professional judgment.
+5.4 SEC Compliance Notice. While the Software incorporates SEC Regulation D (Rule 506b/506c)
+frameworks and SAFE note modeling based on Y Combinator&apos;s Post-Money SAFE (2018) templates, these are
+provided for informational and educational purposes only. The Software does not guarantee SEC compliance and
+should not be used as the sole basis for securities law compliance decisions.
+5.5 Assumption of Risk. You acknowledge and agree that all investment and financial
+decisions carry inherent risks, and you accept full responsibility for any decisions made with the
+assistance of the Software. Ionox Technologies shall not be liable for any financial losses, damages, or
+consequences arising from your use of or reliance on the Software&apos;s outputs.
+
+────────────────────────────────────────
+6. Limitation of Liability
+────────────────────────────────────────
+6.1 Disclaimer of Warranties. THE SOFTWARE IS PROVIDED ON AN "AS IS" AND
+"AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR
+OTHERWISE. IONOX TECHNOLOGIES EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO:
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, AND ANY
+WARRANTIES ARISING FROM COURSE OF DEALING, COURSE OF PERFORMANCE, OR USAGE IN TRADE.
+6.2 No Guarantee of Accuracy. While Fintel is designed to perform precise calculations, Ionox
+Technologies does not warrant that the Software will be error-free, uninterrupted, or that all calculations
+will be 100% accurate. Financial models involve assumptions and estimates that may not reflect actual
+outcomes. Users are responsible for independently verifying all outputs.
+6.3 Limitation of Damages. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
+SHALL IONOX TECHNOLOGIES, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AFFILIATES, OR CONTRACTORS BE LIABLE
+FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT
+LIMITED TO: LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF DATA, LOSS OF BUSINESS OPPORTUNITY, OR ANY OTHER
+FINANCIAL OR COMMERCIAL LOSS, REGARDLESS OF THE CAUSE OF ACTION OR THEORY OF LIABILITY, EVEN IF ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES.
+6.4 Maximum Liability. In no event shall Ionox Technologies&apos; total aggregate liability
+to you for all claims arising out of or relating to this Agreement or the Software exceed the total amount
+paid by you to Ionox Technologies during the twelve (12) months immediately preceding the event giving rise
+to the claim, or one hundred US dollars ($100.00), whichever is greater.
+
+────────────────────────────────────────
+7. Prohibited Uses
+────────────────────────────────────────
+Without limiting the generality of Section 2.3, you expressly agree NOT to use the Software to:
+●
+Violate any applicable local, state, national, or international law, regulation, or treaty
+●
+Engage in securities fraud, insider trading, market manipulation, or any other illegal financial
+activity
+●
+Provide false, misleading, or fabricated financial data or documents to investors, regulators, or any
+third party
+●
+Use the Software to create fraudulent cap tables, term sheets, or financial projections
+●
+Attempt to bypass, circumvent, or compromise the Software&apos;s security measures or license
+validation system
+●
+Use the Software in any manner that could cause harm to Ionox Technologies, its reputation, or its
+other users
+●
+Represent outputs generated by the Software as certified, audited, or professionally verified financial
+documents
+●
+Share, distribute, or resell your license key or access credentials to the Software
+
+────────────────────────────────────────
+8. Termination & Suspension
+────────────────────────────────────────
+8.1 Termination by User. You may stop using the Software at any time by deleting the
+application and clearing all locally stored data. No formal notice is required.
+8.2 Termination by Company. Ionox Technologies reserves the right to terminate or suspend
+your access to the Software at any time, with or without cause, and with or without notice. Grounds for
+immediate termination include but are not limited to: violation of these Terms, attempted unauthorized
+access, distribution of license keys, or use of the Software for illegal purposes.
+8.3 Effect of Termination. Upon termination: (a) your license to use the Software
+immediately ceases; (b) all data stored locally on your device remains your property and can be manually
+deleted; (c) Ionox Technologies has no obligation to provide any refund, except as required by applicable
+law.
+8.4 Survival. Sections 3 (Privacy), 4 (IP), 5 (Disclaimer), 6 (Liability), 7 (Prohibited
+Uses), 9 (Indemnification), and 10 (Dispute Resolution) shall survive any termination of this Agreement.
+
+────────────────────────────────────────
+9. Indemnification
+────────────────────────────────────────
+You agree to indemnify, defend, and hold harmless Ionox Technologies, its officers, directors, employees,
+agents, affiliates, contractors, and licensors from and against any and all claims, demands, damages,
+losses, liabilities, costs, and expenses (including reasonable attorneys&apos; fees) arising out of or
+related to: (a) your use of or inability to use the Software; (b) your violation of any term of this
+Agreement; (c) your violation of any applicable law or regulation; (d) any content or data you input into
+the Software; or (e) any decisions you make based on the Software&apos;s outputs.
+
+────────────────────────────────────────
+10. Dispute Resolution & Governing Law
+────────────────────────────────────────
+10.1 Governing Law. This Agreement shall be governed by and construed in accordance with
+the laws of the jurisdiction in which Ionox Technologies is registered, without regard to its conflict of
+laws provisions.
+10.2 Informal Resolution. Before initiating any formal legal proceedings, you agree to
+first attempt to resolve any dispute informally by contacting Ionox Technologies. We will attempt to resolve
+the dispute within thirty (30) days of receiving your notice. If the dispute is not resolved within this
+period, either party may proceed to formal dispute resolution.
+10.3 Binding Arbitration. Any dispute, claim, or controversy arising out of or relating to
+this Agreement or the breach, termination, enforcement, interpretation, or validity thereof, including the
+determination of the scope or applicability of this agreement to arbitrate, shall be determined by binding
+arbitration administered under the rules of a recognized international arbitration body. The arbitration
+shall be conducted by a single arbitrator and the arbitrator&apos;s decision shall be final and binding.
+Judgment on the arbitration award may be entered in any court of competent jurisdiction.
+10.4 Class Action Waiver. YOU AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE
+CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. You
+waive any right to participate in a class action lawsuit or class-wide arbitration against Ionox
+Technologies.
+
+────────────────────────────────────────
+11. Miscellaneous Provisions
+────────────────────────────────────────
+11.1 Entire Agreement. This Agreement, together with any applicable Master Service
+Agreement (MSA), constitutes the entire agreement between you and Ionox Technologies regarding the Software
+and supersedes all prior or contemporaneous communications, representations, or agreements, whether oral or
+written.
+11.2 Severability. If any provision of this Agreement is found to be unenforceable or
+invalid, that provision shall be limited or eliminated to the minimum extent necessary so that this
+Agreement shall otherwise remain in full force and effect.
+11.3 Waiver. The failure of Ionox Technologies to enforce any right or provision of this
+Agreement shall not constitute a waiver of such right or provision. Any waiver of any provision of this
+Agreement will be effective only if in writing and signed by Ionox Technologies.
+11.4 Assignment. You may not assign or transfer this Agreement or any rights or
+obligations hereunder without the prior written consent of Ionox Technologies. Ionox Technologies may assign
+this Agreement without your consent.
+11.5 Force Majeure. Ionox Technologies shall not be liable for any failure or delay in
+performing its obligations under this Agreement where such failure or delay results from circumstances
+beyond its reasonable control, including but not limited to: acts of God, natural disasters, war, terrorism,
+riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or
+shortages of transportation, facilities, fuel, energy, labor, or materials.
+11.6 Contact. For any questions or concerns regarding this Agreement, please contact
+Ionox Technologies through the official channels provided within the Software or on our website.
+

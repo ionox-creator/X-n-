@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fintel — Complete Documentation</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;background:#0a0512;color:#efe6fb;line-height:1.7;font-size:15px}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,#0a0512 0%,#1a0f2e 50%,#120a25 100%);padding:60px 20px 50px;text-align:center;border-bottom:1px solid rgba(139,92,246,0.2)}
+  .hero-logo{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,#7c2fe0,#5a1fc4);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 32px rgba(124,47,224,0.3)}
+  .hero-logo svg{width:32px;height:32px}
+  .hero h1{font-size:2.2rem;font-weight:800;color:#fff;letter-spacing:-0.5px;margin-bottom:8px}
+  .hero .subtitle{font-size:1rem;color:#8f5cf0;font-weight:600;text-transform:uppercase;letter-spacing:3px;margin-bottom:12px}
+  .hero .tagline{font-size:1.1rem;color:rgba(235,225,248,0.6);max-width:600px;margin:0 auto}
+  .hero .stats{display:flex;justify-content:center;gap:40px;margin-top:30px;flex-wrap:wrap}
+  .hero .stat{text-align:center}
+  .hero .stat-num{font-size:2rem;font-weight:800;color:#8f5cf0}
+  .hero .stat-label{font-size:0.75rem;color:rgba(235,225,248,0.4);text-transform:uppercase;letter-spacing:1px}
+
+  /* Container */
+  .container{max-width:800px;margin:0 auto;padding:40px 20px}
+  .section{margin-bottom:50px}
+  .section-header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+  .section-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .section-title{font-size:1.4rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:1px}
+  .section-desc{font-size:0.95rem;color:rgba(235,225,248,0.6);margin-bottom:20px;line-height:1.8}
+
+  /* Cards */
+  .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:20px;margin-bottom:16px}
+  .card h3{font-size:1.05rem;font-weight:700;color:#c9aef7;margin-bottom:8px}
+  .card p{font-size:0.9rem;color:rgba(235,225,248,0.7);margin-bottom:8px}
+  .card ul{font-size:0.9rem;color:rgba(235,225,248,0.7);margin-left:20px;margin-bottom:8px}
+  .card li{margin-bottom:4px}
+  .card code{background:rgba(139,92,246,0.1);padding:2px 8px;border-radius:4px;font-family:'Courier New',monospace;font-size:0.85rem;color:#c9aef7}
+  .card strong{color:#fff}
+
+  /* Grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .grid-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;padding:14px}
+  .grid-card h4{font-size:0.95rem;font-weight:700;margin-bottom:4px}
+  .grid-card p{font-size:0.8rem;color:rgba(235,225,248,0.5)}
+
+  /* Code block */
+  .code-block{background:rgba(0,0,0,0.4);border:1px solid rgba(139,92,246,0.1);border-radius:8px;padding:14px;font-family:'Courier New',monospace;font-size:0.85rem;color:rgba(235,225,248,0.8);line-height:1.8;margin:12px 0;overflow-x:auto}
+  .code-block b{color:#fbbf24}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:0.9rem}
+  th{background:rgba(139,92,246,0.1);padding:10px 14px;text-align:left;font-weight:700;color:#c9aef7;border-bottom:1px solid rgba(139,92,246,0.2)}
+  td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.04);color:rgba(235,225,248,0.7)}
+  .check{color:#34d399;font-weight:700}
+  .cross{color:rgba(235,225,248,0.25)}
+
+  /* Stats grid */
+  .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+  @media(max-width:600px){.stats-grid{grid-template-columns:1fr}}
+  .stat-box{background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.15);border-radius:10px;padding:18px;text-align:center}
+  .stat-box .num{font-size:2rem;font-weight:800;color:#8f5cf0}
+  .stat-box .lbl{font-size:0.75rem;color:rgba(235,225,248,0.5);text-transform:uppercase;letter-spacing:1px}
+
+  /* Colors */
+  .purple{background:rgba(139,92,246,0.15);color:#a78bfa}
+  .blue{background:rgba(96,165,250,0.15);color:#60a5fa}
+  .green{background:rgba(16,185,129,0.15);color:#34d399}
+  .amber{background:rgba(245,158,11,0.15);color:#fbbf24}
+  .pink{background:rgba(236,72,153,0.15);color:#ec4899}
+  .red{background:rgba(239,68,68,0.15);color:#ef4444}
+
+  /* Footer */
+  .footer{text-align:center;padding:40px 20px;border-top:1px solid rgba(139,92,246,0.1);font-size:0.8rem;color:rgba(235,225,248,0.3)}
+  .footer a{color:#8f5cf0;text-decoration:none}
+
+  /* Nav */
+  .nav{position:sticky;top:0;background:rgba(10,5,18,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(139,92,246,0.1);z-index:100;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+  .nav-brand{font-size:1rem;font-weight:800;color:#fff}
+  .nav-back{font-size:0.85rem;color:#8f5cf0;text-decoration:none;padding:6px 14px;border:1px solid rgba(139,92,246,0.2);border-radius:8px;cursor:pointer}
+  .nav-back:hover{background:rgba(139,92,246,0.1)}
+
+  /* Verdict badge */
+  .verdict{display:inline-block;padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:700;margin:4px 2px}
+  .verdict-healthy{background:rgba(16,185,129,0.1);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+  .verdict-warning{background:rgba(245,158,11,0.1);color:#fbbf24;border:1px solid rgba(245,158,11,0.2)}
+  .verdict-danger{background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.2)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-brand">Fintel Documentation</div>
+  <a class="nav-back" onclick="window.close()">&larr; Back to App</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </svg>
+  </div>
+  <div class="subtitle">Fintel v1.4</div>
+  <h1>Complete Documentation</h1>
+  <div class="tagline">AI-Powered Venture Finance Precision Engine — A comprehensive guide to every feature, calculation, command, and tool within Fintel.</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Calculator Tools</div></div>
+    <div class="stat"><div class="stat-num">20</div><div class="stat-label">Console Commands</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-label">AI Capabilities</div></div>
+    <div class="stat"><div class="stat-num">55</div><div class="stat-label">License Keys</div></div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+<!-- 1. INTRODUCTION -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon purple">&#128218;</div>
+    <div class="section-title">1. Introduction</div>
+  </div>
+  <div class="section-desc">
+    <p><strong>Fintel</strong> is an AI-powered venture finance precision engine developed by <strong>Ionox Technologies</strong>. It is designed for startup founders, venture capitalists, financial analysts, and business strategists who need precise, auditor-grade calculations for equity dilution, SAFE notes, cap tables, liquidation waterfalls, vesting schedules, and more.</p>
+    <br>
+    <p>Unlike traditional cap table tools that calculate ownership top-down, Fintel combines a multi-domain AI assistant, a real-time dilution calculator, a 20-command financial console, and a zero-data privacy architecture into one seamless experience.</p>
+    <br>
+    <p><strong>Who is Fintel for?</strong></p>
+    <ul style="margin-left:20px;color:rgba(235,225,248,0.7)">
+      <li>Startup founders negotiating equity splits and funding rounds</li>
+      <li>VC analysts evaluating deal terms and dilution impact</li>
+      <li>Financial advisors modeling exit scenarios and waterfalls</li>
+      <li>Anyone who needs SEC Regulation D compliant venture finance calculations</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 2. GETTING STARTED -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon green">&#128640;</div>
+    <div class="section-title">2. Getting Started</div>
+  </div>
+  <div class="card">
+    <h3>Step-by-Step Activation</h3>
+    <p><strong>Step 1:</strong> Open Fintel — the welcome screen appears automatically on first visit.</p>
+    <p><strong>Step 2:</strong> Enter your license key in the input field: <code>FINTEL-X7K9-M2P4-Q8W3</code></p>
+    <p><strong>Step 3:</strong> Click <strong>Activate</strong>. The system validates your key using SHA-256 hashing and binds it to your device.</p>
+    <p><strong>Step 4:</strong> A Terms & Conditions dialog appears. Read the 5 sections, check the agreement checkbox, and click <strong>Agree & Activate</strong>.</p>
+    <p><strong>Step 5:</strong> The app unlocks — you now have full access to Dashboard, Calculator, Terminal, Chat, and Settings.</p>
+    <br>
+    <p><strong>Note:</strong> Each license key is bound to one device. If you try to use the same key on another device, you will see: <em>"This license key is already activated on another device."</em></p>
+    <br>
+    <p><strong>No license key?</strong> Click <strong>Get Licence Key</strong> on the welcome screen, fill in your name and email, and your request will be sent to <code>ionoxspace@gmail.com</code>. We will reply with your key.</p>
+  </div>
+</div>
+
+<!-- 3. NAVIGATION -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon blue">&#128204;</div>
+    <div class="section-title">3. Navigation</div>
+  </div>
+  <div class="section-desc">Fintel has 5 main sections accessible via the left navigation bar:</div>
+  <div class="grid">
+    <div class="grid-card" style="border-left:3px solid #60a5fa">
+      <h4 style="color:#60a5fa">&#128203; Dashboard</h4>
+      <p>Overview hub showing system status, SEC compliance badges, and quick access to all tools.</p>
+    </div>
+    <div class="grid-card" style="border-left:3px solid #34d399">
+      <h4 style="color:#34d399">&#128202; Calculator</h4>
+      <p>Startup Dilution Auditor with 6 specialized tools for equity modeling and analysis.</p>
+    </div>
+    <div class="grid-card" style="border-left:3px solid #fbbf24">
+      <h4 style="color:#fbbf24">&#128187; Terminal</h4>
+      <p>Console with 20 venture finance commands. Type commands or use quick-action buttons.</p>
+    </div>
+    <div class="grid-card" style="border-left:3px solid #a78bfa">
+      <h4 style="color:#a78bfa">&#128172; Chat</h4>
+      <p>AI Brain Engine — ask anything about venture finance. Upload files, add web links.</p>
+    </div>
+    <div class="grid-card" style="border-left:3px solid #8f5cf0">
+      <h4 style="color:#8f5cf0">&#9881; Settings</h4>
+      <p>Wallpaper, language, support, documentation, and session management.</p>
+    </div>
+    <div class="grid-card" style="border-left:3px solid #ec4899">
+      <h4 style="color:#ec4899">&#128229; Install App</h4>
+      <p>Click "Install App" in the top bar to install Fintel as a native PWA on your device.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 4. CALCULATOR -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon green">&#128202;</div>
+    <div class="section-title">4. Calculator — Dilution Auditor</div>
+  </div>
+  <div class="section-desc">
+    <p>The Calculator is Fintel's core equity modeling tool. It provides real-time calculations for priced rounds, SAFE notes, and dilution scenarios. Enter values in the <strong>ROUND SPECIFICATIONS</strong> panel, and results update instantly in the <strong>EQUITY CONVERSION PROJECTIONS</strong> section.</p>
+    <br>
+    <p>Click <strong>Model Chat</strong> to send your calculation to the AI Chat for detailed analysis, or <strong>CLI Inject</strong> to send it to the Terminal Console.</p>
+  </div>
+
+  <div class="card">
+    <h3>4.1 Priced Round</h3>
+    <p>Models a priced equity round — the most common type of venture funding.</p>
+    <p><strong>Inputs:</strong></p>
+    <ul>
+      <li><strong>Pre-Money Valuation</strong> — Company's valuation before investment (e.g., $10,000,000). This is what investors and founders agree the company is worth before new money enters.</li>
+      <li><strong>Investment Amount</strong> — How much the investor is putting in (e.g., $2,000,000). This is the actual cash the investor wires to the company.</li>
+      <li><strong>Option Pool (%)</strong> — Employee stock option pool percentage (e.g., 15%). Standard is 10-15%. Pre-money pools dilute founders; post-money pools dilute everyone.</li>
+    </ul>
+    <p><strong>Outputs:</strong></p>
+    <ul>
+      <li><strong>Post-Money Valuation</strong> = Pre-Money + Investment (e.g., $12M)</li>
+      <li><strong>Investor Equity Share</strong> = (Investment ÷ Post-Money) × 100 (e.g., 16.67%)</li>
+      <li><strong>Founder Combined Share</strong> = 100% − Investor % − Option Pool % (e.g., 68.33%)</li>
+    </ul>
+    <p><strong>Example:</strong> Pre-Money $10M, Investment $2M, Pool 15% → Post-Money $12M, Investor 16.67%, Founders 68.33%</p>
+    <p><strong>Verdict:</strong> The system evaluates the round structure and provides a health assessment:</p>
+    <p>
+      <span class="verdict verdict-healthy">HEALTHY</span> Round within SEC Reg D corridors, founder share reasonable
+      <span class="verdict verdict-warning">CAUTION</span> Pool >15%, investor >40%, or founders <50%
+      <span class="verdict verdict-danger">DANGER</span> Pool >20% carves excessive founder value
+    </p>
+    <p><strong>References:</strong> SEC Regulation D Rule 506; YC SAFE Standard 2018; PG "The Equity Equation"</p>
+  </div>
+
+  <div class="card">
+    <h3>4.2 SAFE Radar</h3>
+    <p>Analyzes SAFE (Simple Agreement for Future Equity) notes — convertible instruments that defer valuation to the priced round.</p>
+    <p><strong>Inputs:</strong></p>
+    <ul>
+      <li><strong>Valuation Cap</strong> — Maximum valuation at which the SAFE converts (e.g., $5,000,000). Protects investors from high future valuations.</li>
+      <li><strong>Investment Amount</strong> — How much the investor is putting in via SAFE (e.g., $500,000).</li>
+      <li><strong>SAFE Type</strong> — Pre-Money (founder-favorable, shares dilution proportionally) or Post-Money (YC 2018 standard, founders bear full dilution).</li>
+    </ul>
+    <p><strong>Outputs:</strong></p>
+    <ul>
+      <li><strong>Ownership at Cap</strong> = Investment ÷ Cap × 100 (e.g., $500K ÷ $5M = 10%)</li>
+      <li><strong>Implied Price per Share</strong> = Cap ÷ (Investment ÷ Ownership × 100)</li>
+    </ul>
+    <p><strong>Example:</strong> Cap $5M, Investment $500K → Ownership 10% at cap</p>
+    <p><strong>Verdict:</strong></p>
+    <p>
+      <span class="verdict verdict-healthy">ACCEPTABLE</span> Ownership within early-stage corridors (<15%)
+      <span class="verdict verdict-warning">MODERATE</span> 15-25% ownership, founders absorb full dilution
+      <span class="verdict verdict-danger">HIGH RISK</span> >25% ownership, stacked SAFEs compound dilution
+    </p>
+    <p><strong>References:</strong> YC SAFE Guidance Booklet 2018; SEC Regulation D Rule 506</p>
+  </div>
+
+  <div class="card">
+    <h3>4.3 Waterfall</h3>
+    <p>Models liquidation waterfall — how proceeds are distributed at exit/sale.</p>
+    <p><strong>Inputs:</strong> Exit Value, Investor Preference, Investor %, Founder %, Option Pool %</p>
+    <p><strong>Outputs:</strong> Preference payout, remaining proceeds split by ownership, investor total + multiple, founder total</p>
+    <p><strong>Example:</strong> Exit $50M, Pref $5M, Inv 20%, Founders 70%, Pool 10% → Investor gets $14M (2.80x), Founders get $31.5M</p>
+  </div>
+
+  <div class="card">
+    <h3>4.4 Vesting</h3>
+    <p>Generates year-by-year vesting schedules for founder/employee equity.</p>
+    <p><strong>Inputs:</strong> Total Shares, Cliff (years), Vesting Period (years)</p>
+    <p><strong>Standard:</strong> 4-year vesting with 1-year cliff (industry norm per Feld & Mendelson)</p>
+    <p><strong>Example:</strong> 100,000 shares, 1yr cliff, 4yr period → 2,083 shares/month. Year 1 (cliff) = 25,000 (25%), Year 2 = 50,000 (50%), etc.</p>
+  </div>
+
+  <div class="card">
+    <h3>4.5 Anti-Dilution</h3>
+    <p>Models Full Ratchet vs Weighted Average anti-dilution protection for down rounds.</p>
+    <p><strong>Full Ratchet:</strong> Investor's conversion price drops to the new (lower) round price — most investor-friendly.</p>
+    <p><strong>Weighted Average:</strong> Conversion price adjusts based on a weighted formula — more founder-favorable.</p>
+  </div>
+
+  <div class="card">
+    <h3>4.6 Term Scanner</h3>
+    <p>Red-flag detection in term sheets. Paste term sheet text and the AI identifies potentially harmful clauses.</p>
+  </div>
+</div>
+
+<!-- 5. CONSOLE -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon amber">&#128187;</div>
+    <div class="section-title">5. Console — 20 Commands</div>
+  </div>
+  <div class="section-desc">
+    <p>The Console is a command-line interface for quick venture finance calculations. Type a command in the input box and press <strong>RUN</strong>, or click any quick-action button below the input.</p>
+    <br>
+    <p>Each command returns structured output with sections, data rows, verdicts, and references.</p>
+  </div>
+
+  <div class="card">
+    <h3>Audit Commands</h3>
+    <div class="code-block">
+<b>audit</b> --pre 10M --inv 2M --pool 15 --cur USD
+<b>safe</b> --cap 5M --inv 500K --cur USD
+<b>captable</b> --founders 80 --inv 15 --pool 5
+    </div>
+    <p><strong>audit</strong> — Models a priced round. Calculates post-money, investor %, founder %, pool impact. Returns verdict based on SEC Reg D corridors.</p>
+    <p><strong>safe</strong> — Models a SAFE note. Calculates ownership at cap, implied price per share. Supports pre/post-money types.</p>
+    <p><strong>captable</strong> — Generates a cap table summary with share counts. Validates ownership totals = 100%.</p>
+  </div>
+
+  <div class="card">
+    <h3>Exit & Return Commands</h3>
+    <div class="code-block">
+<b>waterfall</b> --exit 50M --pref 5M --inv 20 --founders 70 --pool 10
+<b>backsolve</b> --target 50M --exit 80M,120M,200M --rounds 2 --current 80
+<b>roi</b> --inv 2M --exit 50M --pct 20
+<b>irr</b> --flows -10M,2M,3M,5M,8M
+    </div>
+    <p><strong>waterfall</strong> — Liquidation waterfall. Shows how exit proceeds split between investors, founders, and pool. Calculates investor multiple (e.g., 2.80x).</p>
+    <p><strong>backsolve</strong> — Reverse exit solver. Enter desired founder payout and exit scenarios. Calculates required ownership %, max dilution budget, and per-round dilution.</p>
+    <p><strong>roi</strong> — Investor ROI analysis. Calculates payout, profit, ROI %, and return multiple. Benchmarks: 3x+ good, 10x+ home run.</p>
+    <p><strong>irr</strong> — Internal Rate of Return. Uses NPV=0 solver. Benchmarks: 15%+ minimum, 25%+ strong.</p>
+  </div>
+
+  <div class="card">
+    <h3>Equity Commands</h3>
+    <div class="code-block">
+<b>vesting</b> --shares 100000 --cliff 1 --period 4
+<b>dilute</b> --current 80 --rounds 3 --each 20
+    </div>
+    <p><strong>vesting</strong> — Year-by-year vesting schedule. Shows vested shares and % at each year. Standard: 4yr/1yr cliff.</p>
+    <p><strong>dilute</strong> — Forward dilution projection. Formula: remaining = current × (1 − each/100)^rounds. Shows impact of multiple funding rounds.</p>
+  </div>
+
+  <div class="card">
+    <h3>Cash & Valuation Commands</h3>
+    <div class="code-block">
+<b>runway</b> --cash 2M --burn 150K
+<b>valuation</b> --method vc --rev 2M --growth 50 --exit-mult 10 --years 5
+<b>valuation</b> --method multiple --rev 2M --mult 8
+    </div>
+    <p><strong>runway</strong> — Cash runway calculator. Months = Cash ÷ Burn. Standard: 18-24 months post-raise.</p>
+    <p><strong>valuation</strong> — Two methods: <strong>VC Method</strong> (PostMoney = ExitValue ÷ TargetROI) and <strong>Revenue Multiple</strong> (Valuation = Revenue × Multiple).</p>
+  </div>
+
+  <div class="card">
+    <h3>Currency Commands</h3>
+    <div class="code-block">
+<b>convert</b> 1000 USD to EUR
+<b>fx</b> USD PKR
+<b>currency</b>
+    </div>
+    <p><strong>convert</strong> — Currency conversion with live rates. <strong>fx</strong> — Exchange rate between two currencies. <strong>currency</strong> — Lists all 8+ supported currencies.</p>
+  </div>
+
+  <div class="card">
+    <h3>Reference Commands</h3>
+    <div class="code-block">
+<b>explain</b> liquidation preference
+<b>explain</b> vesting
+<b>citations</b>
+    </div>
+    <p><strong>explain</strong> — Financial glossary with 20+ venture finance terms. Each term includes a definition and reference.</p>
+    <p><strong>citations</strong> — Shows all reference sources (SEC Reg D, YC SAFE, PG Equity Equation, Feld & Mendelson).</p>
+  </div>
+
+  <div class="card">
+    <h3>Utility Commands</h3>
+    <div class="code-block">
+<b>help</b>          — Show all commands
+<b>status</b>        — System diagnostics
+<b>brain</b> "text"  — Inject custom AI instructions
+<b>clear</b>         — Clear console screen
+    </div>
+  </div>
+</div>
+
+<!-- 6. AI CHAT -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon purple">&#128172;</div>
+    <div class="section-title">6. AI Chat — Brain Engine</div>
+  </div>
+  <div class="section-desc">
+    <p>Fintel's AI Chat is powered by the <strong>BI Brain Engine</strong> — 12 advanced capabilities across 4 intelligence pillars. The AI understands context, follows up on previous messages, and provides structured, actionable insights.</p>
+  </div>
+  <div class="card">
+    <h3>What You Can Ask</h3>
+    <ul>
+      <li><strong>Venture Finance:</strong> "Calculate dilution for a $5M pre-money raise with a $2M SAFE at $8M cap"</li>
+      <li><strong>Business Strategy:</strong> "Create a go-to-market strategy for a B2B SaaS targeting mid-market"</li>
+      <li><strong>Financial Analysis:</strong> "If my CAC is $450 and LTV is $2,700, what's my payback period?"</li>
+      <li><strong>Sales & Marketing:</strong> "Design a MEDDPICC qualification framework for $50K ARR deals"</li>
+    </ul>
+    <p><strong>Features:</strong> Upload files for AI analysis (TXT, CSV, JSON, MD, images), add web links for content extraction, inject custom instructions via the <code>brain</code> command.</p>
+    <p><strong>Citations:</strong> AI responses include reference keys like [YC-SAFE], [SEC-RegD], [PG-EQU], [FELD-VD] for source verification.</p>
+  </div>
+  <div class="card">
+    <h3>The 4 Pillars (12 Capabilities)</h3>
+    <div class="grid">
+      <div class="grid-card" style="border-left:3px solid #60a5fa">
+        <h4 style="color:#60a5fa">Pillar 1: Foundational Intelligence</h4>
+        <p>Data Fusion · Causal Inference · Probabilistic Forecasting</p>
+      </div>
+      <div class="grid-card" style="border-left:3px solid #34d399">
+        <h4 style="color:#34d399">Pillar 2: Strategic Synthesis</h4>
+        <p>NLG Narrative · Hypothesis Testing · Market Intelligence</p>
+      </div>
+      <div class="grid-card" style="border-left:3px solid #fbbf24">
+        <h4 style="color:#fbbf24">Pillar 3: Operational Autonomy</h4>
+        <p>Prescriptive Action · Auto Workflows · Anomaly Detection</p>
+      </div>
+      <div class="grid-card" style="border-left:3px solid #a78bfa">
+        <h4 style="color:#a78bfa">Pillar 4: Evolutionary Architecture</h4>
+        <p>Self-Learning · Explainable AI · Knowledge Graph</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. ANALYTICS & INSIGHTS -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon purple">&#128270;</div>
+    <div class="section-title">7. Analytics & Insights</div>
+  </div>
+  <div class="section-desc">
+    <p>Every calculation in Fintel produces structured, analytical output designed for decision-making.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="num">6</div><div class="lbl">Calculator Tools</div></div>
+    <div class="stat-box"><div class="num">20</div><div class="lbl">Console Commands</div></div>
+    <div class="stat-box"><div class="num">12</div><div class="lbl">AI Capabilities</div></div>
+  </div>
+  <div class="card">
+    <h3>Output Structure</h3>
+    <p>Each command returns 4 types of data blocks:</p>
+    <ul>
+      <li><strong style="color:#c9aef7">Sections</strong> — Organized data groups (e.g., "LIQUIDATION WATERFALL (USD)")</li>
+      <li><strong style="color:#c9aef7">Rows</strong> — Key-value pairs (e.g., "Exit Value: $50M")</li>
+      <li><strong style="color:#c9aef7">Verdicts</strong> — Health status with actionable advice:
+        <br>
+        <span class="verdict verdict-healthy">HEALTHY</span> Within standard corridors
+        <span class="verdict verdict-warning">CAUTION</span> Above standard, monitor
+        <span class="verdict verdict-danger">DANGER</span> High risk, renegotiate
+      </li>
+      <li><strong style="color:#c9aef7">References</strong> — Source citations (SEC Reg D, YC SAFE, PG, Feld & Mendelson)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Calculation History</h3>
+    <p>Click the <strong>History</strong> button in the Console to view all past calculations. Each entry shows the command, timestamp, and full output. Click any entry to reload it into the terminal.</p>
+    <p>History is stored locally in your browser (up to 50 records) and persists across page reloads.</p>
+  </div>
+</div>
+
+<!-- 8. COMPARISON & SCOPE -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon pink">&#9878;</div>
+    <div class="section-title">8. Comparison & Scope</div>
+  </div>
+  <div class="section-desc">How Fintel compares to other venture finance tools in the market.</div>
+  <div class="card">
+    <table>
+      <tr><th>Feature</th><th>Fintel</th><th>Others</th></tr>
+      <tr><td>Priced Round Audit</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>SAFE Note Analysis (Pre/Post-Money)</td><td class="check">&#10003;</td><td class="cross">Partial</td></tr>
+      <tr><td>Liquidation Waterfall</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>Vesting Schedules (4yr/1yr cliff)</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>Anti-Dilution Modeling</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>AI Chat (Brain Engine, 12 capabilities)</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>20 Console Commands</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>Reverse Exit Solver (Backsolve)</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>IRR / ROI / Runway Calculators</td><td class="check">&#10003;</td><td class="cross">Partial</td></tr>
+      <tr><td>PDF Export (Professional B&W, per calculation)</td><td class="check">&#10003;</td><td class="cross">Partial</td></tr>
+      <tr><td>XLSX Export</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>Zero-Data Privacy Architecture</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>Device-Locked License Keys (SHA-256)</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+      <tr><td>PWA Installable</td><td class="check">&#10003;</td><td class="cross">&#10007;</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- 9. EXPORT -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon green">&#128230;</div>
+    <div class="section-title">9. Export — PDF & XLSX</div>
+  </div>
+  <div class="card">
+    <h3>How to Export</h3>
+    <p>Click the <strong>Export</strong> button in either the Calculator or Console tab.</p>
+    <p><strong>PDF Report</strong> — Professional black & soft off-white (#faf8f5) document. Each calculation gets its own 1-page PDF. Includes sections, rows, verdicts, references, and certification.</p>
+    <p><strong>Excel Spreadsheet (.xlsx)</strong> — Data in Section/Label/Value columns. Compatible with Excel 2007+.</p>
+    <p><strong>Filenames:</strong> <code>Fintel-Audit-Report-YYYY-MM-DD.pdf</code> or <code>Fintel-Terminal-Report-YYYY-MM-DD.xlsx</code></p>
+  </div>
+</div>
+
+<!-- 10. SECURITY -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon red">&#128274;</div>
+    <div class="section-title">10. Security & Privacy</div>
+  </div>
+  <div class="card">
+    <h3>License Key Security</h3>
+    <p><strong>SHA-256 Hashed:</strong> License keys are stored as SHA-256 hashes in a SQLite database. The raw keys are never visible in compiled JavaScript — hackers cannot reverse SHA-256 to find keys.</p>
+    <p><strong>One Key Per Device:</strong> Each key is bound to a device fingerprint (browser + screen + OS + timezone). Using the same key on another device is blocked.</p>
+    <p><strong>55 Keys Available:</strong> Enterprise tier keys. Contact <code>ionoxspace@gmail.com</code> to purchase.</p>
+  </div>
+  <div class="card">
+    <h3>Zero-Data Architecture</h3>
+    <p>Fintel operates on a zero-data collection architecture. Your calculations, chat data, and documents are processed locally in your browser session and are not transmitted to external servers. No personal data is stored. Session data clears when you close the tab.</p>
+  </div>
+  <div class="card">
+    <h3>PWA (Progressive Web App)</h3>
+    <p>Fintel is installable as a native app on desktop and mobile. Click <strong>Install App</strong> in the top bar. The app works offline with cached data as fallback.</p>
+  </div>
+</div>
+
+<!-- 11. SUPPORT -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon blue">&#128231;</div>
+    <div class="section-title">11. Support</div>
+  </div>
+  <div class="card">
+    <h3>Contact</h3>
+    <p><strong>Email:</strong> <code>ionoxspace@gmail.com</code></p>
+    <p><strong>Website:</strong> <code>ionox.space</code></p>
+    <p><strong>License Key:</strong> <code>FINTEL-X7K9-M2P4-Q8W3</code> (Enterprise tier)</p>
+    <p>Use the <strong>Contact Support</strong> button in Settings to open your email client with a pre-filled support request.</p>
+    <p>Use the <strong>Get Licence Key</strong> link on the welcome screen to request a new key.</p>
+  </div>
+</div>
+
+<!-- 12. GLOSSARY -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon amber">&#128214;</div>
+    <div class="section-title">12. Glossary</div>
+  </div>
+  <div class="card">
+    <p>Key venture finance terms (also available via <code>explain</code> command in Console):</p>
+    <ul>
+      <li><strong>Pre-Money Valuation</strong> — Company value before investment. Pre-Money + Investment = Post-Money.</li>
+      <li><strong>Post-Money Valuation</strong> — Company value after investment.</li>
+      <li><strong>Liquidation Preference</strong> — Right of preferred shareholders to receive investment back before common shareholders in exit.</li>
+      <li><strong>Participating Preferred</strong> — Investors get preference AND share in remaining (double-dip).</li>
+      <li><strong>Anti-Dilution</strong> — Protection for investors if future round is at lower valuation (down round).</li>
+      <li><strong>Vesting</strong> — Earning equity over time. Standard: 4-year vesting, 1-year cliff.</li>
+      <li><strong>SAFE</strong> — Simple Agreement for Future Equity (YC, 2013). Defers valuation to priced round.</li>
+      <li><strong>Valuation Cap</strong> — Maximum valuation for SAFE/convertible note conversion.</li>
+      <li><strong>Option Pool</strong> — Shares reserved for employees. Typically 10-15%.</li>
+      <li><strong>Pro-Rata</strong> — Right to invest in future rounds to maintain ownership %.</li>
+      <li><strong>Cap Table</strong> — Capitalization table showing all stakeholders and ownership.</li>
+      <li><strong>Fully Diluted</strong> — Ownership using ALL shares including reserved.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 13. REFERENCES -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon green">&#128218;</div>
+    <div class="section-title">13. References</div>
+  </div>
+  <div class="card">
+    <ul>
+      <li><strong>[SEC-RegD]</strong> — SEC Regulation D, Rule 506(b)/506(c) Private Placement Exemptions, Fully Diluted Share Definitions, Accredited Investor Standards</li>
+      <li><strong>[YC-SAFE]</strong> — Y Combinator SAFE Primer 2018, Post-Money Valuation Caps</li>
+      <li><strong>[PG-EQU]</strong> — Paul Graham "The Equity Equation" 2007, Proof: V × (1-s) > V_old</li>
+      <li><strong>[FELD-VD]</strong> — Feld & Mendelson "Venture Deals" 4th Edition, Conversion Pricing, Anti-Dilution Clauses, Cap Table Management</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  &copy; 2026 Fintel &middot; Property of Ionox Technologies<br>
+  Not financial advice. Consult venture legal advisors before executing any financial decisions.<br>
+  <br>
+  <a href="/">Back to Fintel</a>
+</div>
+
+</body>
+</html>
