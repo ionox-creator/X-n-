@@ -1,3 +1,0 @@
-module.exports=[40777,a=>{"use strict";var b=a.i(87924);function c(){return(0,b.jsx)("div",{style:{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",minHeight:"100vh",gap:"2rem",padding:"1rem"},children:(0,b.jsx)("div",{style:{position:"relative",width:"6rem",height:"6rem"},children:(0,b.jsx)("img",{src:"/logo.svg",alt:"Z.ai Logo",style:{width:"100%",height:"100%",objectFit:"contain"}})})})}a.s(["default",()=>c])}];
-
-//# sourceMappingURL=src_app_page_tsx_a7111f3e._.js.map
