@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api",
+      "regex": "^/api(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api(?:/)?$"
+    },
+    {
+      "page": "/api/brain-documents",
+      "regex": "^/api/brain\\-documents(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/brain\\-documents(?:/)?$"
+    },
+    {
+      "page": "/api/brain-documents/view",
+      "regex": "^/api/brain\\-documents/view(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/brain\\-documents/view(?:/)?$"
+    },
+    {
+      "page": "/api/chat",
+      "regex": "^/api/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chat(?:/)?$"
+    },
+    {
+      "page": "/api/download-report",
+      "regex": "^/api/download\\-report(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/download\\-report(?:/)?$"
+    },
+    {
+      "page": "/api/knowledge-ask",
+      "regex": "^/api/knowledge\\-ask(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/knowledge\\-ask(?:/)?$"
+    },
+    {
+      "page": "/api/terminal",
+      "regex": "^/api/terminal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/terminal(?:/)?$"
+    },
+    {
+      "page": "/api/upload-chat-file",
+      "regex": "^/api/upload\\-chat\\-file(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload\\-chat\\-file(?:/)?$"
+    },
+    {
+      "page": "/api/upload-wallpaper",
+      "regex": "^/api/upload\\-wallpaper(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload\\-wallpaper(?:/)?$"
+    },
+    {
+      "page": "/api/validate-key",
+      "regex": "^/api/validate\\-key(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/validate\\-key(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

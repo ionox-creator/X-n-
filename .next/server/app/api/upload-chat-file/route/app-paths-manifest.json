@@ -1,0 +1,3 @@
+{
+  "/api/upload-chat-file/route": "app/api/upload-chat-file/route.js"
+}

@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/brain-documents/route": "/api/brain-documents",
+  "/api/brain-documents/view/route": "/api/brain-documents/view",
+  "/api/chat/route": "/api/chat",
+  "/api/download-report/route": "/api/download-report",
+  "/api/knowledge-ask/route": "/api/knowledge-ask",
+  "/api/route": "/api",
+  "/api/terminal/route": "/api/terminal",
+  "/api/upload-chat-file/route": "/api/upload-chat-file",
+  "/api/upload-wallpaper/route": "/api/upload-wallpaper",
+  "/api/validate-key/route": "/api/validate-key",
+  "/page": "/"
+}

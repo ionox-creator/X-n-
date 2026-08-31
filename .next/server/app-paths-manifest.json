@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/brain-documents/route": "app/api/brain-documents/route.js",
+  "/api/brain-documents/view/route": "app/api/brain-documents/view/route.js",
+  "/api/chat/route": "app/api/chat/route.js",
+  "/api/download-report/route": "app/api/download-report/route.js",
+  "/api/knowledge-ask/route": "app/api/knowledge-ask/route.js",
+  "/api/route": "app/api/route.js",
+  "/api/terminal/route": "app/api/terminal/route.js",
+  "/api/upload-chat-file/route": "app/api/upload-chat-file/route.js",
+  "/api/upload-wallpaper/route": "app/api/upload-wallpaper/route.js",
+  "/api/validate-key/route": "app/api/validate-key/route.js",
+  "/page": "app/page.js"
+}
