@@ -1,7 +1,7 @@
 {
   "name": "Fintel",
   "short_name": "Fintel",
-  "description": "AI Venture Finance Intelligence",
+  "description": "AI Finance Intelligence",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#060a18",
